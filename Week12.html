@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+        }
+
+        /*
+            1. box1, box2, box3을 float 속성을 이용해
+                결과 화면처럼 배치해 주세요.
+
+            2. box4를 container 박스를 기준으로 한 절대 좌표(absolute)를
+               이용해 화면처럼 배치해 주세요.
+
+            3. box5를 브라우저 화면을 기준으로 한 절대 좌표(fixed)를
+                이용해 항상 브라우저 오른쪽 하단에 위치하게 배치해 주세요.
+        */
+
+        .container {
+            width: 100%;
+            height: 200px;
+            border: lightslategray 2px solid;
+            background-color:silver;
+            float:none;
+            clear:both;
+            position:relative;
+
+        }
+
+        #box1 {
+            background: #e0194b;
+            float:left;
+
+        }
+
+        #box2 {
+            background: #138ee0;
+            float:left;
+        }
+
+        #box3 {
+            background: #be13e0;
+            float:right;
+        }
+
+        #box4 {
+            background: #e0c219;
+            position:absolute;
+            left:0;
+            bottom: 0;
+        }
+
+        #box5 {
+            background: #19e044;
+            position: fixed;
+            right: 0;
+            bottom: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="box1">box1</div>
+    <div class="box" id="box2">box2</div>
+    <div class="box" id="box3">box3</div>
+    <div class="container">
+        container 박스
+        <div class="box" id="box4">box4</div>
+    </div>
+    <div class="box" id="box5">box5</div>
+</body>
+
+</html>
