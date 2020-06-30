@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<style>
+    input[type="text"]{
+      border: 1px solid darkgray;
+      border-radius: 5px;
+      height:20px;
+      padding: 5px;
+    }
+      input[type="submit"] {
+        height:30px;
+        vertical-align:middle;
+      }
+      input[type="submit"]:hover{
+        background-color:yellowgreen;
+      }
+      table,td,th {
+        width:200px;
+        margin-top:20px;
+        border: 1px solid black;
+        border-spacing:10px;
+        border-collapse:collapse;
+      }
+      table thead{
+        background-color:tomato;
+        color:white;
+      }
+      table tfoot{
+        background-color:#eeeeee;
+        font-weight:bold;
+      }
+      .month{
+        text-align:center;
+      }
+      .amount{
+        text-align:right;
+      }
+
+
+        /*
+            3. 테이블 스타일 적용
+            테이블 너비 : 200px
+            위쪽 마진 : 20px
+            테이블 테두리 : 컬러-black, 두께-1px
+            셀 패딩 : 10px
+
+            상단 thead 배경색 : tomato
+            상단 thead 텍스트 색상 : white
+
+            하단 tfoot 배경색 : #eeeeee
+            하단 tfoot 글자 두께 : bold
+
+            클래스가 month인 셀 가로방향 텍스트 정렬 : 가운데
+            클래스가 amount인 셀 가로방향 텍스트 정렬 : 오른쪽
+
+        */
+
+
+	</style>
+</head>
+
+<body>
+
+	<form>
+		<input type="text" placeholder="검색어 입력">
+		<input type="submit" value="검색">
+	</form>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Month</th>
+				<th>금액</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="month">1월</td>
+				<td class="amount">100원</td>
+			</tr>
+			<tr>
+				<td class="month">2월</td>
+				<td class="amount">80원</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td class="month">합계</td>
+				<td class="amount">180원</td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+
+</html>
