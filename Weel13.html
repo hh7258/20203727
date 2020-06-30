@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>레이아웃</title>
+    	<style>
+		div {
+			border: 1px solid #ccc;
+		}
+		#container {
+      width:960px;
+
+		}
+
+		#header {
+			padding:20px;
+			margin-bottom:20px;
+			border-bottom: #ccc solid 1px;
+		}
+
+		#title {
+      float:left;
+		}
+
+		#top_menu {
+            margin: 40px 5px 0 0;
+        }
+
+        #top_menu li {
+          display:inline;
+          position:relative;
+          left:520px;
+          top:0;
+        }
+
+        #main_menu {
+            font-size: 12px;
+            color: #ffffff;
+            background-color: #4e4c4d;
+            margin-top: 15px;
+            padding: 12px;
+            text-align: center;
+            clear:both;
+        }
+
+        #main_menu li {
+            padding: 0 20px 0 20px;
+            display:inline;
+        }
+
+		#contents {
+			width: 620px;
+			padding: 20px;
+			margin-bottom: 20px;
+		}
+
+		#sidebar {
+			width: 220px;
+			padding: 20px;
+			margin-bottom: 20px;
+			background:#eee;
+            margin-right: 20px;
+      float:right;
+		}
+
+		#footer {
+			padding:20px;
+			border-top: #ccc solid 1px;
+			background-color: rgb(216, 216, 216);
+		}
+
+	</style>
+</head>
+<body>
+    <div id="container">
+        <header id="header">
+
+			<h1 id="title">My 홈페이지</h1>
+			<ul id="top_menu">
+				<li> 로그인 |</li>
+				<li> 이용안내 |</li>
+				<li> 사이트맵 </li>
+			</ul>
+
+			<ul id="main_menu">
+				<li>MENU1</li>
+				<li>MENU2</li>
+				<li>MENU3</li>
+				<li>MENU4</li>
+				<li>MENU5</li>
+			</ul>
+		</header>
+		<aside id="sidebar">
+			<h2>사이드 메뉴</h2>
+            <ul>
+				<li>A</li>
+				<li>B</li>
+				<li>C</li>
+				<li>D</li>
+            </ul>
+		</aside>
+		<main id="contents">
+			<h2>본문</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quaerat quasi aliquid maxime ratione eos temporibus tenetur autem modi quod corrupti at qui earum enim, sed sint magni facilis! Sed!Nesciunt illo voluptatum nemo, praesentium quia fuga modi illum dolores minima labore corrupti rerum, doloremque saepe earum reprehenderit, vitae deserunt delectus enim! Corrupti numquam voluptatem fuga, recusandae qui pariatur distinctio?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, quas esse rerum, quis est magnam aliquam aperiam ea ipsam quam reprehenderit veritatis eius dignissimos enim voluptates distinctio aliquid! Non, aliquam.Ratione illo voluptates, aliquam vel molestias, quo eum, exercitationem quidem excepturi numquam fugiat rem quibusdam illum! Quia, eveniet, maxime corrupti temporibus nobis nulla dolor cum reprehenderit voluptatibus delectus suscipit ullam.</p>
+		</main>
+		<footer id="footer">
+			<p>주소 : 08221 서울시 구로구 경인로 445 ([구]고척동 62-160) </p>
+			<p>전화번호 : 02-111-1111 </p>
+				<p>Copyright © All rights reserved.</p>
+		</footer>
+    </div>
+</body>
+</html>
